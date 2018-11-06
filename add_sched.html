@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEST - Add Schedule</title>
+</head>
+
+<body class="blue-grey darken-4">
+
+    <div class="container">
+        <!-- Page Content starts here -->
+
+        <!-- Nav Bar -->
+        <nav>
+            <div class="nav-wrapper blue-grey darken-4">
+                <a href="/index.html" class="brand-logo center">
+                    <img src="/images/logo.png" alt="Nest Logo" style="height: 40px; margin: 10px">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/profile.html">Schedules</a></li>
+                    <li><a href="/profile.html">Profiles</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Floating Button -->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large amber">
+                <i class="large material-icons blue-grey-text text-darken-4">add</i>
+            </a>
+            <ul>
+                <li><a href="profile.html" class="btn-floating yellow darken-1"><i class="material-icons">perm_contact_calendar</i></a></li>
+                <li><a href="add_profile.html" class="btn-floating green"><i class="material-icons">add</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">edit</i></a></li>
+                <li><a class="btn-floating red"><i class="material-icons">close</i></a></li>
+            </ul>
+        </div>
+
+        <br>
+        <div class="container">
+            <h2 class="center amber-text">Add new schedule</h2>
+        </div>
+
+        <br>
+
+        <!-- Add Profile Form -->
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">Pick a date</label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Bella</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Cara</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <br>
+        <hr>
+
+        <!-- Description Card -->
+
+
+        <footer class="page-footer blue-grey darken-4">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel blue-grey darken-3">
+                        <span class="grey-text text-lighten-1">NEST is an application developed to help parents and
+                            caregivers keep the
+                            daily, weekly, monthly and annual scheduling of a child's activities easy.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="center footer-copyright">
+                <div class="container">
+                    © 2018 Chris Laupama
+                </div>
+            </div>
+        </footer>
+
+        <!-- Page Content ends here -->
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'left',
+                hoverEnabled: false
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, options);
+        });
+    </script>
+</body>
+
+</html>
